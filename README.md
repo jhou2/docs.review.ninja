@@ -10,8 +10,8 @@ Getting ready to Contribute
 > If you want to contribute to design or want to test locally follow these
 > steps. Otherwise just edit the markdown files and open a pull request.
 
-You need to install ruby >1.9.3 and nodejs and clone the repository. Open a
-terminal and `cd` into the repository directory.
+You need to install ruby >1.9.3 and clone the repository. Open a terminal and
+`cd` into the repository directory.
 
 Install all necessary ruby libraries:
 
