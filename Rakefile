@@ -1,6 +1,6 @@
 require "rubygems"
 require "tmpdir"
-
+require 'webrick'
 require "bundler/setup"
 require "jekyll"
 
@@ -34,32 +34,15 @@ task :publish => [:generate] do
     system "git add ."
     message = "Site updated at #{Time.now.utc}"
     system "git commit -m #{message.inspect}"
-    system "git remote add origin git@github.com:ixti/ixti.github.com.git"
-    system "git push origin master --force"
+    system "git remote add origin git@github.com:reviewninja/docs.review.ninja"
+    system "git push origin master:gh-pages --force"
   end
 end
 
-
-desc "Create a new post"
-task :new do
-  title     = say_what?('Title: ')
-  filename  = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{sluggize title}.md"
-
-  if File.exist? filename
-    puts "Can't create new post: \e[33m#{filename}\e[0m"
-    puts "  \e[31m- Path already exists.\e[0m"
-    exit 1
-  end
-
-  File.open(filename, "w") do |post|
-    post.puts "---"
-    post.puts "layout:    post"
-    post.puts "title:     #{title}"
-    post.puts "---"
-    post.puts ""
-    post.puts "Once upon a time..."
-  end
-
-  puts "A new post was created for at:"
-  puts "  \e[32m#{filename}\e[0m"
+desc "Generate site and host with static file server"
+task :serve => [:generate] do
+  root = File.expand_path '_site'
+  server = WEBrick::HTTPServer.new :Port => 8080, :DocumentRoot => root
+  trap 'INT' do server.shutdown end
+  server.start
 end
