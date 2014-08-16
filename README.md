@@ -1,8 +1,14 @@
 Contribute
 ----------
 
+Fork this repo, make your changes to the markdown files and create a pull
+request. Only read on if you want to test locally.
+
+Getting ready to Contribute
+---------------------------
+
 > If you want to contribute to design or want to test locally follow these
-> steps
+> steps. Otherwise just edit the markdown files and open a pull request.
 
 You need to install ruby >1.9.3 and nodejs and clone the repository. Open a
 terminal and `cd` into the repository directory.
