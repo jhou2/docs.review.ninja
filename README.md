@@ -1,7 +1,7 @@
 Contribute
 ----------
 
-> If you want to contribute to design and want to test locally follow these
+> If you want to contribute to design or want to test locally follow these
 > steps
 
 You need to install ruby >1.9.3 and nodejs and clone the repository. Open a
@@ -16,5 +16,8 @@ Once that's done, you are ready to contribute to the documentation.
 You can add/edit the markdown files and compile it to html and start a small
 http server to look at it in your browser with `rake serve`.
 
-If you are a collaborator, you can also publish the documentation with
-`rake publish`.
+> this automaticatlly compiles all files when you make changes, so no need to
+> restart the server
+
+If you are a collaborator, you can also publish the documentation with `rake
+publish`.

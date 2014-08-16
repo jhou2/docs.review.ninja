@@ -43,6 +43,10 @@ desc "Generate site and host with static file server"
 task :serve => [:generate] do
   root = File.expand_path '_site'
   server = WEBrick::HTTPServer.new :Port => 8080, :DocumentRoot => root
-  trap 'INT' do server.shutdown end
+  jekyllPid = Process.spawn "jekyll build --watch"
+  trap 'INT' do
+    Process.kill(9, jekyllPid) rescue Errno::ESRCH
+    server.shutdown
+  end
   server.start
 end
