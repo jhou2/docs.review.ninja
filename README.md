@@ -2,7 +2,7 @@ Contribute
 ----------
 
 Fork this repo, make your changes to the markdown files and create a pull
-request. Only read on if you want to test locally.
+request. You only need to read on if you want to test locally.
 
 Getting ready to Contribute
 ---------------------------
@@ -11,7 +11,7 @@ Getting ready to Contribute
 > steps. Otherwise just edit the markdown files and open a pull request.
 
 You need to install ruby >1.9.3 and clone the repository. Open a terminal and
-`cd` into the repository directory. (if you have a osx or linux you should
+`cd` into the repository directory. (if you have osx or linux you should
 already have that, on windows I recommend this http://rubyinstaller.org/)
 
 Install all necessary ruby libraries:
