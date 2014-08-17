@@ -15,6 +15,8 @@ $border-radius-base: 0px;
 $border-radius-large: 0px;
 $border-radius-small: 0px;
 
+$link-color: $navbar-default-brand-color;
+
 @import "bootstrap";
 @import "font-awesome";
 
@@ -28,4 +30,15 @@ $border-radius-small: 0px;
 
 li.active a {
   font-weight: bold;
+}
+
+ul.doc-nav {
+  li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  li.doc-nav-group-title {
+    margin-top: 30px;
+  }
 }
