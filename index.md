@@ -35,13 +35,37 @@ Your Github credentials are needed to access your code for code review.  We foll
 
 ### Add your repository
 
-Click "Configure".
+To add repositories, click "Configure".
+
+To add a specific repository, click the "On/Off" slider.
 
 ### Code Review
+
+Click the repository you want to view.
+Click the Pull Requests tab.
+All pending pull requests appear in this list.
+Click a pull request to begin a code review.
 
 #### Vote
 
 #### Create an issue
 
+#### View Commits
+
+Click the Commits tab.
+Click a commit you're interested in.
+The Commit information page displays 
+
+#### The ninja.json file
+
+
 #### Create a bot
 
+Go to the repository you want to work on.
+Click the "Bots" tab.
+Click + to create a bot.
+Enter a name for the bot.
+Click the "On/Off" slider to activate the bot.
+
+
+#### Bot development
