@@ -35,13 +35,13 @@ Your Github credentials are needed to access your code for code review.  We foll
 
 ### Add your repository
 
-Click Add repository.
+Click "Configure".
 
 ### Code Review
 
-#### Vote!
+#### Vote
 
 #### Create an issue
 
-### Start a bot
+#### Create a bot
 
