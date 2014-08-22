@@ -89,6 +89,15 @@ To run locally:
 	grunt sass
 	grunt serve
 
-You'll need the following environment variables set:
+You'll need the following environment variables set in a venv file:
+
+	* MONGODB
+	* GITHUB_CLIENT
+	* GITHUB_SECRET
+	* GITHUB_CALLBACK
+	* SMTP_HOST
+	* SMTP_PORT
+	* SMTP_USER
+	* SMTP_PASS
 
 
