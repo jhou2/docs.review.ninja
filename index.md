@@ -69,3 +69,26 @@ Click the "On/Off" slider to activate the bot.
 
 
 #### Bot development
+
+
+## Installation Guide
+
+	git clone git://github.com/review.ninja.git
+
+You'll need nodejs, grunt, and bower.  If you don't have them already, install them with the following commands:
+
+	npm install -g grunt-cli
+	npm install -g bower
+
+To run locally:
+
+	npm install
+	bower install
+	gem install compass
+	source venv
+	grunt sass
+	grunt serve
+
+You'll need the following environment variables set:
+
+
