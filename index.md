@@ -56,7 +56,7 @@ To run locally:
 
 You'll need the following environment variables set in a venv file:
 
-<table>
+<table id="environment-variables-table">
 	<tr>
 	<th>Environment Variable</th>
 	<th>Description</th>
@@ -139,19 +139,36 @@ You'll need the following environment variables set in a venv file:
 </table>
 # Review Ninja Use of Github API Scope
 
-	* user:email
+In order to provide you with an effective code review, Review Ninja needs the following permissions.  Please refer to [GitHub's API documentation] (https://developer.github.com/v3/oauth/#scopes) as well for more information.
 
-	* repo
+ * user:email
 
-	* repo:status
+	We synchronize your email addresses for the purpose of emailing you build notifications. They're not being used for any other means.
 
-	* read:repo_hook
+	We ask for this permission, because without it, we may have no means of sending you the build notifications. Your email address can be hidden from the GitHub profile, which in turns hides it from us as well.
 
-	* write:repo_hook
+ * repo
 
-	* read:org
+ 	We need to access your repos to show you the diff and allow you perform a code review.
 
-	* write:org
+ * repo:status
+
+ 	After every build, we update the status of its commit, which is most relevant for testing pull request. This scope gives us the permission to update the commit status as the build starts and finishes.
+
+ * read:repo_hook
+
+ * write:repo_hook
+
+ * read:org
+
+ 	Review Ninja shows you all of your repositories, including the ones from any organization you're part of.
+
+	The GitHub API hides any organizations you're a private member of without this scope. So to make sure we show you all of your repositories, we require this scope.
+
+	Note that this scope allows access to the basic information on both private and public repositories, but not on any of the data and code stored in them.
+
+ * write:org
+
 
 
 
