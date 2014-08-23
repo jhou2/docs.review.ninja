@@ -1,0 +1,44 @@
+// navbar styling
+$nav-link-padding: 10px 30px;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$navbar-default-bg: #333;
+$navbar-default-brand-color: #3f9a94;
+$navbar-default-color: #ccc;
+$navbar-default-link-color: $navbar-default-color;
+$navbar-default-link-active-color: $navbar-default-color;
+$navbar-default-link-hover-color: $navbar-default-color;
+$navbar-default-link-active-bg: transparent;
+$navbar-height: 50px;
+
+// no round corners
+$border-radius-base: 0px;
+$border-radius-large: 0px;
+$border-radius-small: 0px;
+
+$link-color: $navbar-default-brand-color;
+
+@import "bootstrap";
+@import "font-awesome";
+
+.nav {
+  font-size: 13px;
+}
+
+.navbar-brand {
+  font-size: 14px;
+}
+
+li.active a {
+  font-weight: bold;
+}
+
+ul.doc-nav {
+  li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  li.doc-nav-group-title {
+    margin-top: 30px;
+  }
+}

@@ -5,8 +5,8 @@ layout: default
 Review Ninja Documentation
 =========================
 
-This is the user documentation page for
-[Review Ninja](https://github.com/reviewninja/review.ninja). This documentation applies to both the public instance at http://review.ninja/ and your private instances.  
+Welcome to 
+[Review Ninja](https://github.com/reviewninja/review.ninja)! You can access the free public instance at http://review.ninja/ or create your own private instance.  
 
 Quickstart Guide
 ----------------
