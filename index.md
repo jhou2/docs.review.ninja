@@ -2,16 +2,21 @@
 layout: default
 ---
 
-Review Ninja Documentation
-=========================
+<div class="row">
+	<div class="col-md-3">
+		{% image reviewninja-face.png width="100%" %}
+	</div>
+	<div class="col-md-9">
+		<h1>Review Ninja Documentation</h1>
+	</div>
+</div>
 
 Welcome to 
-[Review Ninja](https://github.com/reviewninja/review.ninja)! You can access the free public instance at http://review.ninja/ or create your own private instance.  
+[Review Ninja](https://github.com/reviewninja/review.ninja) documentation! We show you how to perform code reviews on the free public instance at http://review.ninja/ or create your own private instance. 
 
-Quickstart Guide
-----------------
+<h2 id="quickstart">Quickstart</h2>
 
-Go to http://review.ninja/auth/github.
+Go to <a href="http://review.ninja/auth/github" target="_blank">Review Ninja</a>.
 
 Enter your Github credentials.
 
@@ -33,7 +38,7 @@ All pending pull requests appear in this list.
 Click a pull request to begin a code review.
 
 
-## Installation Guide
+<h1 id="installation">Installation</h1>
 
 	git clone git://github.com/review.ninja.git
 
@@ -52,34 +57,14 @@ To run locally:
 	grunt serve
 
 
-# Environment Variables
+<h1 id="environment-variables">Environment Variables</h1>
 
 You'll need the following environment variables set in a venv file:
 
-<table id="environment-variables-table">
+<table class="table">
 	<tr>
 	<th>Environment Variable</th>
 	<th>Description</th>
-</tr>
-<tr>
-	<td>PORT</td>
-	<td>local port to bind to, defaults to 5000</td>
-</tr>
-<tr>
-	<td>PROTOCOL</td>
-	<td>"http" or "https", default: "https"</td>
-</tr>
-<tr>
-	<td>HOST</td>
-	<td>defaults to "review.ninja"</td>
-</tr>
-<tr>
-	<td>HOST_PORT</td>
-	<td>only needs to be set if custom (e.g. http/https but not on port 80/443)</td>
-</tr>
-<tr>
-	<td>MONGODB</td>
-	<td>must be set if not same as default (default not recommended, only for development purposes): "mongodb://reviewninja:reviewninja@localhost:27017/reviewninja"</td>
 </tr>
 <tr>
 	<td>GITHUB_CLIENT</td>
@@ -91,43 +76,63 @@ You'll need the following environment variables set in a venv file:
 </tr>
 <tr>
 	<td>GITHUB_CALLBACK</td>
-	<td>defaults to "PROTOCOL://HOST(:PORT)?/auth/github/callback"</td>
+	<td>Defaults to "PROTOCOL://HOST(:PORT)?/auth/github/callback"</td>
 </tr>
 <tr>
 	<td>GITHUB_HOST</td>
-	<td>defaults to "github.com", warning: if this variable is set, it is assumed, that github enterprise is used</td>
+	<td>Defaults to "github.com". Warning: If this variable is set, it is assumed that Github Enterprise is used.</td>
 </tr>
 <tr>
 	<td>GITHUB_API_HOST </td>
-	<td>defaults to "api.github.com"</td>
+	<td>Defaults to "api.github.com"</td>
 </tr>
 <tr>
 	<td>GITHUB_PATH_PREFIX</td>
-	<td>defaults to "/api/v3" if enterprise "" if not</td>
+	<td>For Github Enterprise, this defaults to "/api/v3". Otherwise, it defaults to empty string or "".</td>
 </tr>
 <tr>
 	<td>GITHUB_PROTOCOL</td>
-	<td>"http" or "https", defaults to "https"</td>
+	<td>Defaults to "https".  Options: "http" or "https"</td>
 </tr>
 <tr>
 	<td>GITHUB_AUTHORIZATION_URL</td>
-	<td>defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/authorize"</td>
+	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/authorize"</td>
 </tr>
 <tr>
 	<td>GITHUB_TOKEN_URL</td>
-	<td>defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/access_token"</td>
+	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/access_token"</td>
 </tr>
 <tr>
 	<td>GITHUB_PROFILE_URL</td>
-	<td>defaults to "GITHUB_PROTOCOL://GITHUB_API_HOST+GITHUB_PATH_PREFIX/user"</td>
+	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_API_HOST+GITHUB_PATH_PREFIX/user"</td>
 </tr>
 <tr>
 	<td>GACODE</td>
-	<td>optional if not set, no google analytics will be recorded</td>
+	<td>Optional.  If this is not set, Google Analytics will not be recorded.</td>
+</tr>
+<tr>
+	<td>HOST</td>
+	<td>Defaults to "review.ninja"</td>
+</tr>
+<tr>
+	<td>HOST_PORT</td>
+	<td>This only needs to be set if it is a custom host port.  For example, http and https are used but not on port 80 and 443.</td>
+</tr>
+<tr>
+	<td>MONGODB</td>
+	<td>This must be set if it is not the same as the default: "mongodb://reviewninja:reviewninja@localhost:27017/reviewninja"  The default is only for development purposes.  It is not recommended.</td>
+</tr>
+<tr>
+	<td>PORT</td>
+	<td>The local port to bind to.  Defaults to 5000.</td>
+</tr>
+<tr>
+	<td>PROTOCOL</td>
+	<td>Defaults to "https".  "http" or "https".  </td>
 </tr>
 <tr>
 	<td>SMTP_HOST</td>
-	<td>if SMTP_HOST is set, then all SMTP_* must be set if its not set, then the servers sendmail will be used
+	<td>if SMTP_HOST is set, then all SMTP_* variables must be set.  If they are not set, then the server's sendmail variables will be used.
 	<ul>
 		<li>SMTP_HOST</li>
 		<li>SMTP_PORT</li>
@@ -137,15 +142,15 @@ You'll need the following environment variables set in a venv file:
 	</td>
 </tr>
 </table>
-# Review Ninja Use of Github API Scope
+<h1 id="github-api-scope">
+Review Ninja Use of Github API Scope
+</h1>
 
 In order to provide you with an effective code review, Review Ninja needs the following permissions.  Please refer to [GitHub's API documentation] (https://developer.github.com/v3/oauth/#scopes) as well for more information.
 
  * user:email
 
-	We synchronize your email addresses for the purpose of emailing you build notifications. They're not being used for any other means.
-
-	We ask for this permission, because without it, we may have no means of sending you the build notifications. Your email address can be hidden from the GitHub profile, which in turns hides it from us as well.
+	We use your email address to send you notifications. We do not use your email address for anything else.
 
  * repo
 
@@ -153,24 +158,30 @@ In order to provide you with an effective code review, Review Ninja needs the fo
 
  * repo:status
 
- 	After every build, we update the status of its commit, which is most relevant for testing pull request. This scope gives us the permission to update the commit status as the build starts and finishes.
+ 	After every code review, we update the status of its commit, which is relevant for submitting a pull request. This scope gives us the permission to update the commit status.
 
  * read:repo_hook
 
+ 	We need granular access to act on events in your repositories. read:repo_hook grants read and ping access to hooks in public or private repositories.
+
  * write:repo_hook
+
+ 	We need granular access to act on events in your repositories.  write:repo_hook grants read, write, and ping access to hooks in public or private repositories.
 
  * read:org
 
  	Review Ninja shows you all of your repositories, including the ones from any organization you're part of.
 
-	The GitHub API hides any organizations you're a private member of without this scope. So to make sure we show you all of your repositories, we require this scope.
+	The GitHub API hides any organizations that you privately belong to without this scope. We require this scope so we can show you all of your repositories.
 
 	Note that this scope allows access to the basic information on both private and public repositories, but not on any of the data and code stored in them.
 
  * write:org
 
+ 	write:org allows an application to publicize and unpublicize an organization membership.  
 
 
+<h1 id="about">About</h1>
 
 What is Review Ninja?
 ---------------------
