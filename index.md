@@ -196,3 +196,23 @@ Why should I use Review Ninja?
 ------------------------------
 
 Review Ninja defines a clear process for code review in GitHub. It also provides a status overview so that team members in other departments, such as product management or design, can quickly grasp the state of the project.
+
+<h1 id="license">License
+</h1>
+
+Copyright 2014 review.ninja
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+
+<h1 id="credits">Credits
+</h1>
+
+<p align="center">
+![SAP](https://cdn.rawgit.com/reviewninja/review.ninja/master/sap_logo.png)
+
+<p align="center">
+:heart: from the github team @ sap
