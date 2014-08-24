@@ -3,10 +3,10 @@ layout: default
 ---
 
 <div class="row">
-	<div class="col-md-3">
-		{% image reviewninja-face.png width="100%" %}
+	<div class="col-md-3 col-xs-6">
+		{% image reviewninja-face.png width="100px" %}
 	</div>
-	<div class="col-md-9">
+	<div class="col-md-9 col-xs-6">
 		<h1>Review Ninja Documentation</h1>
 	</div>
 </div>
@@ -14,28 +14,40 @@ layout: default
 Welcome to 
 [Review Ninja](https://github.com/reviewninja/review.ninja) documentation! We show you how to perform code reviews on the free public instance at http://review.ninja/ or create your own private instance. 
 
-<h2 id="quickstart">Quickstart</h2>
+<h1 id="quickstart">Quickstart</h1>
 
 Go to <a href="http://review.ninja/auth/github" target="_blank">Review Ninja</a>.
 
 Enter your Github credentials.
 
-Your Github credentials are needed to access your code for code review.  We follow Github's recommended best practices to secure your credentials.  All your code is stored on Github's servers.  None of it is copied or stored on Review Ninja servers.  You are welcome to check out the source code yourself and run your own instance of Review Ninja.
+Your Github credentials are needed to access your code for code review.  
 
-### Add your repository
+Note:  We follow Github's recommended best practices to secure your credentials.  All your code is stored on Github's servers.  None of it is copied or stored on Review Ninja servers.  You are welcome to check out the source code yourself and run your own instance of Review Ninja.
 
-Click on the organization name with the repository you want to add.  You must have collaborator status to add the repo.
+## Add your repository
+
+To add a repository, click <i class="fa fa-plus-circle"></i>.  
+To remove a repository, click <i class="fa fa-times"></i>.
+
+If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator status to add the repo.
 
 Review Ninja loads the repositories you have write access to.  Click on the repository you want to add.
 
 You can also type the name of the repository and click Enter.
 
-### Code Review
+## Code Review
 
 Click the repository you want to view.
-Click the Pull Requests tab.
-All pending pull requests appear in this list.
+All pending pull requests in this repository appear in a list.
 Click a pull request to begin a code review.
+
+To star a review, click <i class="fa fa-star ng-scope"></i>.
+
+## Configuration
+
+To configure your settings, click <i class="fa fa-cog"></i>.
+
+You can change your notification settings for pull requests, issues, and stars.
 
 
 <h1 id="installation">Installation</h1>
