@@ -145,7 +145,7 @@ it.
 <h1 id="environment-variables">Environment Variables</h1>
 
 The following are the environment variables you can configure in a venv file:
-
+<div class="table-responsive">
 <table class="table">
 	<tr>
 	<th>Environment Variable</th>
@@ -227,6 +227,8 @@ The following are the environment variables you can configure in a venv file:
 	</td>
 </tr>
 </table>
+</div>
+
 <h1 id="github-api-scope">
 Review Ninja Use of GitHub API Scope
 </h1>
