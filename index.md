@@ -104,7 +104,7 @@ Install npm and bower dependencies:
 
 To configure the application, copy the `.env.example` file to `venv`:
 
-	cp env.example venv
+	cp .env.example venv
 
 You also need to [register an application on
 GitHub](https://github.com/settings/applications/new). The callback is
