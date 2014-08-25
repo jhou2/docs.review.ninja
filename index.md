@@ -28,12 +28,12 @@ Note:  We follow Github's recommended best practices to secure your credentials.
 
 ## Add your repository
 
-To add a repository, click <i class="fa fa-plus-circle"></i>.  
-To remove a repository, click <i class="fa fa-times"></i>.
-
 If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator status to add the repo.
 
 Review Ninja loads the repositories you have write access to.  Click on the repository you want to add.
+
+To add a repository, click <i class="fa fa-plus-circle"></i>.  
+To remove a repository, click <i class="fa fa-times"></i>.
 
 You can also type the name of the repository and click Enter.
 
