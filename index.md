@@ -64,26 +64,86 @@ To configure your settings, click <i class="fa fa-cog"></i>.
 
 The public instance at http://review.ninja is free to use.  You can also install and run your own instance.  You will need to set your own environment variables.
 
-	git clone git://github.com/review.ninja.git
+Go to https://github.com/reviewninja/vagrant.review.ninja.  
 
-You'll need nodejs, grunt, and bower.  If you don't have them already, install them with the following commands:
+This is a vagrant box/salt provisioning to get you setup for developing on ReviewNinja as quickly as possible.
 
-	npm install -g grunt-cli
-	npm install -g bower
+Set up the environment
+----------------------
 
-To run locally:
+You need to have [Virtualbox](https://www.virtualbox.org/) and
+[Vagrant](https://www.vagrantup.com/) installed.
+
+Once you have Virtualbox and Vagrant installed you can clone this repository
+
+	git clone https://github.com/reviewninja/vagrant.review.ninja.git
+
+and run
+
+	vagrant up
+
+If you have not already used the ubuntu/trusty64 image with vagrant then it
+will download it for you, spin up the machine and run
+[salt](http://www.saltstack.com/) provisioning.
+
+> If anything fails (network failure, or any other cause), run `vagrant
+> provision` to get the machine into the correct state.
+
+You can now ssh into the machine
+
+	vagrant ssh
+
+The app lies in `/home/vagrant/review.ninja` so `cd` into it.
+
+	cd ~/review.ninja
+
+Install npm and bower dependencies
 
 	npm install
 	bower install
-	gem install compass
-	source venv
-	grunt sass
+
+Next copy the `env.example` file to `venv`. (This is where the configuration
+takes place)
+
+	cp env.example venv
+
+You also need to [register an application on
+GitHub](https://github.com/settings/applications/new). The callback is
+http://localhost:5000/auth/github/callback, name and homepage you can fill out
+as you desire.
+
+Set the `GITHUB_CLIENT` and `GITHUB_SECRET` accordingly in the `venv` file.
+
+If necessary you can set the other variables too, although only the following variables are required: 
+  * `MONGODB`
+  * `GITHUB_CLIENT`
+  * `GITHUB_SECRET` 
+
+Unless you have a alternate configuration, then the `MONGODB` default in the `env.example` file is correct.
+
+Start the application
+---------------------
+
+There is a grunt job that starts up the app and compiles the sass files
+whenever they are changed.
+
 	grunt serve
+
+> If you need to compile the sass files on demand, run `grunt sass`
+
+Contribute to this repo
+-----------------------
+
+Any feedback or contributions on customizations are very welcome.
+
+If you like any other provisioning provider better and can contribute your
+script, feel free to open an issue and we are happy to create a repository for
+it.
 
 
 <h1 id="environment-variables">Environment Variables</h1>
 
-You'll need the following environment variables set in a venv file:
+The following are the environment variables you can configure in a venv file:
 
 <table class="table">
 	<tr>
