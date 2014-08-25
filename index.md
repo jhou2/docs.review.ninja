@@ -3,16 +3,18 @@ layout: default
 ---
 
 <div class="row">
-	<div class="col-md-3 col-xs-6">
+	<div class="col-md-3 col-xs-3">
 		{% image reviewninja-face.png width="100px" %}
 	</div>
-	<div class="col-md-9 col-xs-6">
+	<div class="col-md-9 col-xs-9">
 		<h1>Review Ninja Documentation</h1>
 	</div>
 </div>
 
 Welcome to 
-[Review Ninja](https://github.com/reviewninja/review.ninja) documentation! We show you how to perform code reviews on the free public instance at http://review.ninja/ or create your own private instance. 
+[Review Ninja](https://github.com/reviewninja/review.ninja) documentation! 
+
+Do simple code reviews for free at http://review.ninja/ or create your own private instance. 
 
 <h1 id="quickstart">Quickstart</h1>
 
@@ -35,20 +37,28 @@ Review Ninja loads the repositories you have write access to.  Click on the repo
 
 You can also type the name of the repository and click Enter.
 
+## Basic Workflow
+
+  1. Create a branch for your feature.
+  2. Write code.
+  3. Submit a pull request.
+  4. Other members of the organization review the code and comment or star code as a sign of approval.
+  5. Once everyone has reviewed it, the merge is commited.
+
 ## Code Review
 
 Click the repository you want to view.
-All pending pull requests in this repository appear in a list.
+All pending pull requests in this repository appear in a list.  
+
 Click a pull request to begin a code review.
 
 To star a review, click <i class="fa fa-star ng-scope"></i>.
 
 ## Configuration
 
-To configure your settings, click <i class="fa fa-cog"></i>.
-
 You can change your notification settings for pull requests, issues, and stars.
 
+To configure your settings, click <i class="fa fa-cog"></i>.
 
 <h1 id="installation">Installation</h1>
 
@@ -193,6 +203,8 @@ In order to provide you with an effective code review, Review Ninja needs the fo
  	write:org allows an application to publicize and unpublicize an organization membership.  
 
 
+
+
 <h1 id="about">About</h1>
 
 What is Review Ninja?
@@ -212,13 +224,19 @@ Review Ninja defines a clear process for code review in GitHub. It also provides
 <h1 id="license">License
 </h1>
 
-Copyright 2014 review.ninja
+Copyright 2014 by [SAP AG](www.sap.com) and made available under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). 
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
+    http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
 
 <h1 id="credits">Credits
 </h1>
@@ -227,4 +245,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 ![SAP](https://cdn.rawgit.com/reviewninja/review.ninja/master/sap_logo.png)
 
 <p align="center">
-:heart: from the github team @ sap
+<i class="fa fa-heart"></i> from the github team @ sap
