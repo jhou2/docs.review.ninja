@@ -62,6 +62,8 @@ To configure your settings, click <i class="fa fa-cog"></i>.
 
 <h1 id="installation">Installation</h1>
 
+The public instance at http://review.ninja is free to use.  You can also install and run your own instance.  You will need to set your own environment variables.
+
 	git clone git://github.com/review.ninja.git
 
 You'll need nodejs, grunt, and bower.  If you don't have them already, install them with the following commands:
@@ -165,10 +167,20 @@ You'll need the following environment variables set in a venv file:
 </tr>
 </table>
 <h1 id="github-api-scope">
-Review Ninja Use of Github API Scope
+Review Ninja Use of GitHub API Scope
 </h1>
 
-In order to provide you with an effective code review, Review Ninja needs the following permissions.  Please refer to [GitHub's API documentation] (https://developer.github.com/v3/oauth/#scopes) as well for more information.
+We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), name (GitHub handle), and email.  All other information stored is specific to Review Ninja.  Review Ninja is a "client-heavy" application, meaning that every request for GitHub data is piped to GitHub and subject to their security mechanisms.
+
+The following are the activities that Review Ninja does with the GitHub permissions:
+
+  1. Create Issues
+  2. Set statuses
+  3. Read the email address of the user
+  4. Create/Delete webhooks
+  5. "Reading" and displaying for code review
+
+Review Ninja requests the following permissions.  Please refer to [GitHub's API documentation] (https://developer.github.com/v3/oauth/#scopes) as well for more information.  The app is still in active development, and some of these permissions will likely be eliminated in the near future.
 
  * user:email
 
