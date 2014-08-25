@@ -6,7 +6,7 @@ layout: default
 Welcome to 
 [Review Ninja](https://github.com/reviewninja/review.ninja) documentation! 
 
-Do simple code reviews for free at http://review.ninja/ or create your own private instance. 
+Start reviewing code at http://review.ninja/ or create your own private instance. 
 
 <h1 id="quickstart">Quickstart</h1>
 
@@ -14,15 +14,13 @@ Go to <a href="http://review.ninja/auth/github" target="_blank">Review Ninja</a>
 
 Enter your Github credentials.
 
-Your Github credentials are needed to access your code for code review.  
-
-Note:  We follow Github's recommended best practices to secure your credentials.  All your code is stored on Github's servers.  None of it is copied or stored on Review Ninja servers.  You are welcome to check out the source code yourself and run your own instance of Review Ninja.
+We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), name (GitHub handle), and email.  All other information stored is specific to Review Ninja.
 
 ## Add your repository
 
 If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator status to add the repo.
 
-Review Ninja loads the repositories you have write access to.  Click on the repository you want to add.
+Review Ninja loads the repositories that you have write permissions for.  Click on the repository you want to add.
 
 To add a repository, click <i class="fa fa-plus-circle"></i>.  
 To remove a repository, click <i class="fa fa-times"></i>.
@@ -52,7 +50,7 @@ Any time you discover something that needs fixing, Review Ninja opens a GitHub i
 
 ## Starring
 
-Review Ninja understands that often in code review it matters most who performmed the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
+Review Ninja understands that often in code review what matters most is who performmed the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
 
 To star a review, click <i class="fa fa-star ng-scope"></i>.
 
@@ -104,8 +102,8 @@ Install npm and bower dependencies
 	npm install
 	bower install
 
-Next copy the `env.example` file to `venv`. (This is where the configuration
-takes place)
+Next copy the `.env.example` file to `venv`. This is where the configuration
+takes place.
 
 	cp env.example venv
 
@@ -122,7 +120,7 @@ If necessary you can set the other variables too, although only the following va
   * `GITHUB_CLIENT`
   * `GITHUB_SECRET` 
 
-Unless you have a alternate configuration, then the `MONGODB` default in the `env.example` file is correct.
+Unless you have a alternate configuration, then the `MONGODB` default in the `.env.example` file is correct.
 
 Start the application
 ---------------------
@@ -132,7 +130,7 @@ whenever they are changed.
 
 	grunt serve
 
-If you need to compile the sass files on demand, run `grunt sass`
+If you need to compile the sass files on demand, run `grunt sass`.
 
 Contribute to this repo
 -----------------------
@@ -145,7 +143,7 @@ it.
 
 ## Developing for Review Ninja
 
-If you want to get started hacking Review Ninja, go to https://github.com/reviewninja/dev.review.ninja.
+To get started hacking Review Ninja, go to https://github.com/reviewninja/dev.review.ninja.
 
 
 <h1 id="environment-variables">Environment Variables</h1>

@@ -29,3 +29,14 @@ $border-radius-small: 0px;
 li.active a {
   font-weight: bold;
 }
+
+ul.doc-nav {
+  li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  li.doc-nav-group-title {
+    margin-top: 30px;
+  }
+}
