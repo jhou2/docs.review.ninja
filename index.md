@@ -2,15 +2,7 @@
 layout: default
 ---
 
-<div class="row">
-	<div class="col-md-3 col-xs-3">
-		{% image reviewninja-face.png width="100px" %}
-	</div>
-	<div class="col-md-9 col-xs-9">
-		<h1>Review Ninja Documentation</h1>
-	</div>
-</div>
-
+<h1>Review Ninja Documentation</h1>
 Welcome to 
 [Review Ninja](https://github.com/reviewninja/review.ninja) documentation! 
 
@@ -47,10 +39,20 @@ You can also type the name of the repository and click Enter.
 
 ## Code Review
 
+Compare diffs and add your comments.  Review Ninja provides a convenient way to add your comments either for a pull request as a whole or on specific line numbers.
+
 Click the repository you want to view.
 All pending pull requests in this repository appear in a list.  
 
 Click a pull request to begin a code review.
+
+## Issue Management
+
+Any time you discover something that needs fixing, Review Ninja opens a GitHub issue.  
+
+## Starring
+
+Review Ninja understands that often in code review it matters most who performmed the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
 
 To star a review, click <i class="fa fa-star ng-scope"></i>.
 
@@ -140,6 +142,10 @@ Any feedback or contributions on customizations are very welcome.
 If you like any other provisioning provider better and can contribute your
 script, feel free to open an issue and we are happy to create a repository for
 it.
+
+## Developing for Review Ninja
+
+If you want to get started hacking Review Ninja, go to https://github.com/reviewninja/dev.review.ninja.
 
 
 <h1 id="environment-variables">Environment Variables</h1>
