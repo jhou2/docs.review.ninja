@@ -12,7 +12,7 @@ Start reviewing code at http://review.ninja/ or create your own private instance
 
 Go to <a href="http://review.ninja/auth/github" target="_blank">Review Ninja</a>.
 
-Enter your Github credentials.
+Enter your GitHub credentials.
 
 We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), name (GitHub handle), and email.  All other information stored is specific to Review Ninja.
 
@@ -66,7 +66,7 @@ The public instance at http://review.ninja is free to use.  You can also install
 
 Go to https://github.com/reviewninja/vagrant.review.ninja.  
 
-This is a vagrant box/salt provisioning to get you setup for developing on ReviewNinja as quickly as possible.
+This is a vagrant box/salt provisioning to get you set up for developing on Review Ninja as quickly as possible.
 
 Set up the environment
 ----------------------
@@ -89,21 +89,20 @@ will download it for you, spin up the machine and run
 If anything fails (network failure, or any other cause), run `vagrant
 provision` to get the machine into the correct state.
 
-You can now ssh into the machine
+You can now ssh into the machine:
 
 	vagrant ssh
 
-The app lies in `/home/vagrant/review.ninja` so `cd` into it.
+The app is located in `/home/vagrant/review.ninja`.  
 
 	cd ~/review.ninja
 
-Install npm and bower dependencies
+Install npm and bower dependencies:
 
 	npm install
 	bower install
 
-Next copy the `.env.example` file to `venv`. This is where the configuration
-takes place.
+To configure the application, copy the `.env.example` file to `venv`:
 
 	cp env.example venv
 
@@ -120,12 +119,12 @@ If necessary you can set the other variables too, although only the following va
   * `GITHUB_CLIENT`
   * `GITHUB_SECRET` 
 
-Unless you have a alternate configuration, then the `MONGODB` default in the `.env.example` file is correct.
+The `MONGODB` default in the `.env.example` file is correct unless you have an alternative configuration.
 
 Start the application
 ---------------------
 
-There is a grunt job that starts up the app and compiles the sass files
+Use grunt to start up the app and compile the sass files
 whenever they are changed.
 
 	grunt serve
@@ -169,7 +168,7 @@ The following are the environment variables you can configure in a venv file:
 </tr>
 <tr>
 	<td><code>GITHUB_HOST</code></td>
-	<td>Defaults to "github.com". Warning: If this variable is set, it is assumed that Github Enterprise is used.</td>
+	<td>Defaults to "github.com". Warning: If this variable is set, it is assumed that GitHub Enterprise is used.</td>
 </tr>
 <tr>
 	<td><code>GITHUB_API_HOST</code> </td>
@@ -177,7 +176,7 @@ The following are the environment variables you can configure in a venv file:
 </tr>
 <tr>
 	<td><code>GITHUB_PATH_PREFIX</code></td>
-	<td>For Github Enterprise, this defaults to "/api/v3". Otherwise, it defaults to empty string or "".</td>
+	<td>For GitHub Enterprise, this defaults to "/api/v3". Otherwise, it defaults to empty string or "".</td>
 </tr>
 <tr>
 	<td><code>GITHUB_PROTOCOL</code></td>
@@ -280,8 +279,6 @@ Review Ninja requests the following permissions.  Please refer to [GitHub's API 
  * write:org
 
  	write:org allows an application to publicize and unpublicize an organization membership.  
-
-
 
 
 <h1 id="about">About</h1>
