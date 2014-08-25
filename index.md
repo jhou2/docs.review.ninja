@@ -43,7 +43,7 @@ You can also type the name of the repository and click Enter.
   2. Write code.
   3. Submit a pull request.
   4. Other members of the organization review the code and comment or star code as a sign of approval.
-  5. Once everyone has reviewed it, the merge is commited.
+  5. The collaborator decides if sufficient code review has occurred and commits the merge.
 
 ## Code Review
 
