@@ -86,8 +86,8 @@ If you have not already used the ubuntu/trusty64 image with vagrant then it
 will download it for you, spin up the machine and run
 [salt](http://www.saltstack.com/) provisioning.
 
-> If anything fails (network failure, or any other cause), run `vagrant
-> provision` to get the machine into the correct state.
+If anything fails (network failure, or any other cause), run `vagrant
+provision` to get the machine into the correct state.
 
 You can now ssh into the machine
 
@@ -115,6 +115,7 @@ as you desire.
 Set the `GITHUB_CLIENT` and `GITHUB_SECRET` accordingly in the `venv` file.
 
 If necessary you can set the other variables too, although only the following variables are required: 
+
   * `MONGODB`
   * `GITHUB_CLIENT`
   * `GITHUB_SECRET` 
@@ -129,7 +130,7 @@ whenever they are changed.
 
 	grunt serve
 
-> If you need to compile the sass files on demand, run `grunt sass`
+If you need to compile the sass files on demand, run `grunt sass`
 
 Contribute to this repo
 -----------------------
@@ -151,77 +152,77 @@ The following are the environment variables you can configure in a venv file:
 	<th>Description</th>
 </tr>
 <tr>
-	<td>GITHUB_CLIENT</td>
+	<td><code>GITHUB_CLIENT</code></td>
 	<td>Required</td>
 </tr>
 <tr>
-	<td>GITHUB_SECRET</td>
+	<td><code>GITHUB_SECRET</code></td>
 	<td>Required</td>
 </tr>
 <tr>
-	<td>GITHUB_CALLBACK</td>
+	<td><code>GITHUB_CALLBACK</code></td>
 	<td>Defaults to "PROTOCOL://HOST(:PORT)?/auth/github/callback"</td>
 </tr>
 <tr>
-	<td>GITHUB_HOST</td>
+	<td><code>GITHUB_HOST</code></td>
 	<td>Defaults to "github.com". Warning: If this variable is set, it is assumed that Github Enterprise is used.</td>
 </tr>
 <tr>
-	<td>GITHUB_API_HOST </td>
+	<td><code>GITHUB_API_HOST</code> </td>
 	<td>Defaults to "api.github.com"</td>
 </tr>
 <tr>
-	<td>GITHUB_PATH_PREFIX</td>
+	<td><code>GITHUB_PATH_PREFIX</code></td>
 	<td>For Github Enterprise, this defaults to "/api/v3". Otherwise, it defaults to empty string or "".</td>
 </tr>
 <tr>
-	<td>GITHUB_PROTOCOL</td>
+	<td><code>GITHUB_PROTOCOL</code></td>
 	<td>Defaults to "https".  Options: "http" or "https"</td>
 </tr>
 <tr>
-	<td>GITHUB_AUTHORIZATION_URL</td>
+	<td><code>GITHUB_AUTHORIZATION_URL</code></td>
 	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/authorize"</td>
 </tr>
 <tr>
-	<td>GITHUB_TOKEN_URL</td>
+	<td><code>GITHUB_TOKEN_URL</code></td>
 	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/access_token"</td>
 </tr>
 <tr>
-	<td>GITHUB_PROFILE_URL</td>
+	<td><code>GITHUB_PROFILE_URL</code></td>
 	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_API_HOST+GITHUB_PATH_PREFIX/user"</td>
 </tr>
 <tr>
-	<td>GACODE</td>
+	<td><code>GACODE</code></td>
 	<td>Optional.  If this is not set, Google Analytics will not be recorded.</td>
 </tr>
 <tr>
-	<td>HOST</td>
+	<td><code>HOST</code></td>
 	<td>Defaults to "review.ninja"</td>
 </tr>
 <tr>
-	<td>HOST_PORT</td>
+	<td><code>HOST_PORT</code></td>
 	<td>This only needs to be set if it is a custom host port.  For example, http and https are used but not on port 80 and 443.</td>
 </tr>
 <tr>
-	<td>MONGODB</td>
+	<td><code>MONGODB</code></td>
 	<td>This must be set if it is not the same as the default: "mongodb://reviewninja:reviewninja@localhost:27017/reviewninja"  The default is only for development purposes.  It is not recommended.</td>
 </tr>
 <tr>
-	<td>PORT</td>
+	<td><code>PORT</code></td>
 	<td>The local port to bind to.  Defaults to 5000.</td>
 </tr>
 <tr>
-	<td>PROTOCOL</td>
+	<td><code>PROTOCOL</code></td>
 	<td>Defaults to "https".  "http" or "https".  </td>
 </tr>
 <tr>
-	<td>SMTP_HOST</td>
+	<td><code>SMTP_HOST</code></td>
 	<td>if SMTP_HOST is set, then all SMTP_* variables must be set.  If they are not set, then the server's sendmail variables will be used.
 	<ul>
-		<li>SMTP_HOST</li>
-		<li>SMTP_PORT</li>
-		<li>SMTP_USER</li>
-		<li>SMTP_PASS</li>
+		<li><code>SMTP_HOST</code></li>
+		<li><code>SMTP_PORT</code></li>
+		<li><code>SMTP_USER</code></li>
+		<li><code>SMTP_PASS</code></li>
 	</ul>
 	</td>
 </tr>
