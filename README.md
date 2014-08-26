@@ -23,7 +23,7 @@ Once that's done, you are ready to contribute to the documentation.
 You can add/edit the markdown files and compile it to html and start a small
 http server to look at it in your browser with `rake serve`.
 
-> this automaticatlly compiles all files when you make changes, so no need to
+> this automatically compiles all files when you make changes, so no need to
 > restart the server
 
 If you are a collaborator, you can also publish the documentation with `rake
