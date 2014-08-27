@@ -2,25 +2,25 @@
 layout: default
 ---
 
-<h1>Review Ninja Documentation</h1>
+<h1>ReviewNinja Documentation</h1>
 Welcome to 
-[Review Ninja](https://github.com/reviewninja/review.ninja) documentation! 
+[ReviewNinja](https://github.com/reviewninja/review.ninja) documentation! 
 
 Start reviewing code at http://review.ninja/ or create your own private instance. 
 
 <h1 id="quickstart">Quickstart</h1>
 
-Go to <a href="http://review.ninja/auth/github" target="_blank">Review Ninja</a>.
+Go to <a href="http://review.ninja/auth/github" target="_blank">ReviewNinja</a>.
 
 Enter your GitHub credentials.
 
-We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), name (GitHub handle), and email.  All other information stored is specific to Review Ninja.
+We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), name (GitHub handle), and email.  All other information stored is specific to ReviewNinja.
 
 ## Add your repository
 
 If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator status to add the repo.
 
-Review Ninja loads the repositories that you have write permissions for.  Click on the repository you want to add.
+ReviewNinja loads the repositories that you have write permissions for.  Click on the repository you want to add.
 
 To add a repository, click <i class="fa fa-plus-circle"></i>.  
 To remove a repository, click <i class="fa fa-times"></i>.
@@ -37,7 +37,7 @@ You can also type the name of the repository and click Enter.
 
 ## Code Review
 
-Compare diffs and add your comments.  Review Ninja provides a convenient way to add your comments either for a pull request as a whole or on specific line numbers.
+Compare diffs and add your comments.  ReviewNinja provides a convenient way to add your comments either for a pull request as a whole or on specific line numbers.
 
 Click the repository you want to view.
 All pending pull requests in this repository appear in a list.  
@@ -46,11 +46,11 @@ Click a pull request to begin a code review.
 
 ## Issue Management
 
-Any time you discover something that needs fixing, Review Ninja opens a GitHub issue.  
+Any time you discover something that needs fixing, ReviewNinja opens a GitHub issue.  
 
 ## Starring
 
-Review Ninja understands that often in code review what matters most is who performmed the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
+ReviewNinja understands that often in code review what matters most is who performmed the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
 
 To star a review, click <i class="fa fa-star ng-scope"></i>.
 
@@ -66,7 +66,7 @@ The public instance at http://review.ninja is free to use.  You can also install
 
 Go to https://github.com/reviewninja/vagrant.review.ninja.  
 
-This is a vagrant box/salt provisioning to get you set up for developing on Review Ninja as quickly as possible.
+This is a vagrant box/salt provisioning to get you set up for developing on ReviewNinja as quickly as possible.
 
 Set up the environment
 ----------------------
@@ -140,9 +140,9 @@ If you like any other provisioning provider better and can contribute your
 script, feel free to open an issue and we are happy to create a repository for
 it.
 
-## Developing for Review Ninja
+## Developing for ReviewNinja
 
-To get started hacking Review Ninja, go to https://github.com/reviewninja/dev.review.ninja.
+To get started hacking ReviewNinja, go to https://github.com/reviewninja/dev.review.ninja.
 
 
 <h1 id="environment-variables">Environment Variables</h1>
@@ -233,12 +233,12 @@ The following are the environment variables you can configure in a venv file:
 </div>
 
 <h1 id="github-api-scope">
-Review Ninja Use of GitHub API Scope
+ReviewNinja Use of GitHub API Scope
 </h1>
 
-We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), name (GitHub handle), and email.  All other information stored is specific to Review Ninja.  Review Ninja is a "client-heavy" application, meaning that every request for GitHub data is piped to GitHub and subject to their security mechanisms.
+We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), name (GitHub handle), and email.  All other information stored is specific to ReviewNinja.  ReviewNinja is a "client-heavy" application, meaning that every request for GitHub data is piped to GitHub and subject to their security mechanisms.
 
-The following are the activities that Review Ninja does with the GitHub permissions:
+The following are the activities that ReviewNinja does with the GitHub permissions:
 
   1. Create Issues
   2. Set statuses
@@ -246,7 +246,7 @@ The following are the activities that Review Ninja does with the GitHub permissi
   4. Create/Delete webhooks
   5. "Reading" and displaying for code review
 
-Review Ninja requests the following permissions.  Please refer to [GitHub's API documentation] (https://developer.github.com/v3/oauth/#scopes) as well for more information.  The app is still in active development, and some of these permissions will likely be eliminated in the near future.
+ReviewNinja requests the following permissions.  Please refer to [GitHub's API documentation] (https://developer.github.com/v3/oauth/#scopes) as well for more information.  The app is still in active development, and some of these permissions will likely be eliminated in the near future.
 
  * user:email
 
@@ -270,7 +270,7 @@ Review Ninja requests the following permissions.  Please refer to [GitHub's API 
 
  * read:org
 
- 	Review Ninja shows you all of your repositories, including the ones from any organization you're part of.
+ 	ReviewNinja shows you all of your repositories, including the ones from any organization you're part of.
 
 	The GitHub API hides any organizations that you privately belong to without this scope. We require this scope so we can show you all of your repositories.
 
@@ -283,19 +283,19 @@ Review Ninja requests the following permissions.  Please refer to [GitHub's API 
 
 <h1 id="about">About</h1>
 
-What is Review Ninja?
+What is ReviewNinja?
 ---------------------
 
-Review Ninja is a lightweight tool deeply integrated with GitHub that helps you perform code reviews quickly and efficiently. Review Ninja supports hassle-free committing and merging through pull requests, with a simple voting system. Our primary focus is to make it easier to identify, review, and collaborate in code reviews.
+ReviewNinja is a lightweight tool deeply integrated with GitHub that helps you perform code reviews quickly and efficiently. ReviewNinja supports hassle-free committing and merging through pull requests, with a simple voting system. Our primary focus is to make it easier to identify, review, and collaborate in code reviews.
 
-Review Ninja stores the least amount of information from your GitHub account to make the app work. It ensures that the necessary data is up to date and the data is stored at GitHub only.  None of your code is stored with Review Ninja.  
+ReviewNinja stores the least amount of information from your GitHub account to make the app work. It ensures that the necessary data is up to date and the data is stored at GitHub only.  None of your code is stored with ReviewNinja.  
 
-Review Ninja integrates into GitHub.com as well as GitHub Enterprise. The application stack includes Node.js, Express, MongoDB and AngularJS.
+ReviewNinja integrates into GitHub.com as well as GitHub Enterprise. The application stack includes Node.js, Express, MongoDB and AngularJS.
 
-Why should I use Review Ninja?
+Why should I use ReviewNinja?
 ------------------------------
 
-Review Ninja defines a clear process for code review in GitHub. It also provides a status overview so that team members in other departments, such as product management or design, can quickly grasp the state of the project.
+ReviewNinja defines a clear process for code review in GitHub. It also provides a status overview so that team members in other departments, such as product management or design, can quickly grasp the state of the project.
 
 <h1 id="license">License
 </h1>
