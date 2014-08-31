@@ -16,7 +16,7 @@ The following are the activities that ReviewNinja does with the GitHub permissio
   4. Create/Delete webhooks
   5. "Reading" and displaying for code review
 
-The app is in active development, and some of the API scope permission requests may be removed in the near future.  ReviewNinja requests the following permissions:  
+The app is in active development, and some of the following API scope permission requests may be removed in the near future.  ReviewNinja requests the following permissions:  
 
  * user:email
 
@@ -50,4 +50,4 @@ The app is in active development, and some of the API scope permission requests 
 
  	write:org allows an application to publicize and unpublicize an organization membership.  
 
-Please refer to [GitHub's API documentation](https://developer.github.com/v3/oauth/#scopes) as well for more information.
+Please refer to [GitHub's API documentation](https://developer.github.com/v3/oauth/#scopes) for more information.

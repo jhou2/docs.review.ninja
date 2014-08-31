@@ -48,15 +48,26 @@ Click a pull request to begin a code review.
 
 Any time you discover something that needs fixing, ReviewNinja opens a GitHub issue. 
 
-To create an issue, click the plus sign next to Issue <i class="fa fa-plus"></i>.
+To create an issue, click Issues <i class="fa fa-plus"></i>.
 
-You must enter a title for the issue.  Entering a description is optional.  If you want to link the issue to a line number, click the line number.  A yellow icon <span class="octicon octicon-issue-opened text-warning"></span> appears beside the line.
+You must enter a title for the issue.  Entering a description is optional.  To link the issue to a line number, click the line number.  An icon <span class="octicon octicon-issue-opened text-warning"></span> appears beside the line.
+
+Click on other issues to view them, add comments, or close the issues.  The corresponding GitHub issue will also be closed.  
 
 ## Starring
 
 ReviewNinja understands that often in code review what matters most is *who* did the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
 
-To star a review, click <i class="fa fa-star ng-scope"></i>.
+To star a review, click the ninja <i class="fa fa-star ng-scope"></i>.
+
+## Merge with Confidence
+
+The Merge pull request button changes color to signal the level of confidence in the merge.
+
+If there is at least one star with no open issues, the Merge pull request button appears green.  
+If there are no stars, the Merge pull request button appears orange.  
+If there are open issues, the Merge pull request button appears red.
+
 
 ## Configuration
 

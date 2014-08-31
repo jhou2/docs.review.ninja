@@ -4,7 +4,7 @@ title: ReviewNinja Installation
 ---
 <h1 id="installation">Installation</h1>
 
-To install and run your own instance, go to https://github.com/reviewninja/vagrant.review.ninja.  This is a vagrant box/salt provisioning to help get you set up developing on ReviewNinja as quickly as possible.
+To install and run your own instance, go to https://github.com/reviewninja/vagrant.review.ninja.  This is a vagrant box/salt provisioning to get you set up developing on ReviewNinja as quickly as possible.
 
 Set up the environment
 ----------------------
