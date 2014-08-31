@@ -1,3 +1,7 @@
+# ReviewNinja Documentation
+
+This is still very much a work in progress.  To give feedback, please create an issue or pull request.
+
 Contribute
 ----------
 
