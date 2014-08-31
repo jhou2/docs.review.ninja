@@ -50,7 +50,7 @@ Any time you discover something that needs fixing, ReviewNinja opens a GitHub is
 
 ## Starring
 
-ReviewNinja understands that often in code review what matters most is who performmed the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
+ReviewNinja understands that often in code review what matters most is who performed the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
 
 To star a review, click <i class="fa fa-star ng-scope"></i>.
 
@@ -106,7 +106,7 @@ To configure the application, copy the `.env.example` file to `venv`:
 
 	cp .env.example venv
 
-You also need to [register an application on
+You also need to [register the application on
 GitHub](https://github.com/settings/applications/new). The callback is
 http://localhost:5000/auth/github/callback, name and homepage you can fill out
 as you desire.
