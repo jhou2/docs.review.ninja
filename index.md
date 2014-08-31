@@ -18,7 +18,7 @@ We authenticate all sessions with GitHub's provided OAuth service.  We never sto
 
 ## Add your repository
 
-If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator status to add the repo.
+If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator or owner status to add the repo.
 
 ReviewNinja loads the repositories that you have write permissions for.  Click on the repository you want to add.
 
@@ -32,7 +32,7 @@ You can also type the name of the repository and click Enter.
   1. Create a branch for your feature.
   2. Write code.
   3. Submit a pull request.
-  4. Other members of the organization review the code and comment or star code as a sign of approval.
+  4. Other members of the organization review the code and comment or star the code as a sign of approval.
   5. The collaborator decides if sufficient code review has occurred and commits the merge.
 
 ## Code Review
@@ -50,15 +50,23 @@ Any time you discover something that needs fixing, ReviewNinja opens a GitHub is
 
 ## Starring
 
-ReviewNinja understands that often in code review what matters most is who performed the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
+ReviewNinja understands that often in code review what matters most is *who* did the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
 
 To star a review, click <i class="fa fa-star ng-scope"></i>.
 
 ## Configuration
 
-You can change your notification settings for pull requests, issues, and stars.
+You can change your notification settings for pull requests, issues, and stars.  In contrast to GitHub, ReviewNinja email notifications are "opt-in".  You will only receive email notifications if you select the appropriate checkboxes. 
 
 To configure your settings, click <i class="fa fa-cog"></i>.
+
+You can choose to receive email notifications for the following:
+
+  * Pull requests
+  * Issues
+  * Ninja stars
+
+You can also enter specific branches that you want to "watch".  You will receive email notifications about the branch whenever there is an action related to it.
 
 <h1 id="installation">Installation</h1>
 
