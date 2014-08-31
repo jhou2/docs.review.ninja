@@ -22,6 +22,7 @@ assets:
   js_compressor:  uglifier
   cache:          true
 
+
 exclude:
   - Gemfile
   - Gemfile.lock

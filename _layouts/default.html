@@ -29,7 +29,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">HIGHLIGHTS</a></li>
-          <li class="active"><a href="#">DOCUMENTATION</a></li>
+          <li class="active"><a href="{{ site.baseurl }}/">DOCUMENTATION</a></li>
           <li><a href="#">CONTACT</a></li>
           <li><a href="http://review.ninja">GOTO REVIEWNINJA</a></li>
         </ul>
@@ -43,15 +43,15 @@
         </div>
         <div class="col-md-2">
           <ul class="list-unstyled doc-nav">
-            <li class="doc-nav-group-title">Documentation</li>
-            <ul class="list-unstyled doc-nav-group">
-              <li><a href="#quickstart">Quickstart</a></li>
-              <li><a href="#installation">Installation</a></li>
-              <li><a href="#environment-variables">Environment Variables</a></li>
-              <li><a href="#github-api-scope">GitHub API Scope</a></li>
-              <li><a href="#about">About Review Ninja</a></li>
-              <li><a href="#license">License</a></li>
-              <li><a href="#credits">Credits</a></li>
+            <ul class="list-unstyled doc-nav">
+            <li class="doc-nav-group-title"><a href="{{ site.baseurl }}/">Documentation</a></li>
+              <li><a href="{{ site.baseurl }}/">Quickstart</a></li>
+              <li><a href="{{ site.baseurl }}/installation">Installation</a></li>
+              <li><a href="{{ site.baseurl }}/installation/#environment-variables">Environment Variables</a></li>
+              <li><a href="{{ site.baseurl }}/github-scope">GitHub API Scope</a></li>
+              <li><a href="{{ site.baseurl }}/about">About Review Ninja</a></li>
+              <li><a href="{{ site.baseurl }}/about#license">License</a></li>
+              <li><a href="{{ site.baseurl }}/about#credits">Credits</a></li>
             </ul>
             <li class="doc-nav-group-title">Contribute</li>
             <li>This documentation is stored on <a href="https://github.com/reviewninja/docs.review.ninja">Github</a>.  If you  have any feedback, <a href="https://github.com/reviewninja/docs.review.ninja/issues/new">open an issue</a> or a pull request.  Thanks!</li>
