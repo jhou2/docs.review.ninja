@@ -46,7 +46,11 @@ Click a pull request to begin a code review.
 
 ## Issue Management
 
-Any time you discover something that needs fixing, ReviewNinja opens a GitHub issue.  
+Any time you discover something that needs fixing, ReviewNinja opens a GitHub issue. 
+
+To create an issue, click the plus sign next to Issue <i class="fa fa-plus"></i>.
+
+You must enter a title for the issue.  Entering a description is optional.  If you want to link the issue to a line number, click the line number.  A yellow icon <span class="octicon octicon-issue-opened text-warning"></span> appears beside the line.
 
 ## Starring
 

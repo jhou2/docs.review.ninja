@@ -4,9 +4,7 @@ title: ReviewNinja Installation
 ---
 <h1 id="installation">Installation</h1>
 
-To install and run your own instance, go to https://github.com/reviewninja/vagrant.review.ninja.  
-
-This is a vagrant box/salt provisioning to get you set up for developing on ReviewNinja as quickly as possible.
+To install and run your own instance, go to https://github.com/reviewninja/vagrant.review.ninja.  This is a vagrant box/salt provisioning to help get you set up developing on ReviewNinja as quickly as possible.
 
 Set up the environment
 ----------------------
@@ -25,8 +23,8 @@ Run:
 
 	vagrant up
 
-This will download the puppetlabs/ubuntu-14.04-64-puppet image, if you don't have it, 
-and spin up the machine. Run [salt](http://www.saltstack.com/) provisioning.
+This downloads a puppetlabs/ubuntu-14.04-64-puppet image if you don't have it 
+and starts up the virtual machine. Run [salt](http://www.saltstack.com/) provisioning.
 
 If anything fails (network failure, or any other cause), run `vagrant
 provision` to get the machine into the correct state.
@@ -48,14 +46,14 @@ To configure the application, copy the `.env.example` file to `venv`:
 
 	cp .env.example venv
 
-You also need to [register the application on
+You need to [register the application on
 GitHub](https://github.com/settings/applications/new). The callback is
-http://localhost:5000/auth/github/callback, name and homepage you can fill out
-as you desire.
+http://localhost:5000/auth/github/callback.  Fill out the name and homepage 
+as you wish.
 
-Set the `GITHUB_CLIENT` and `GITHUB_SECRET` accordingly in the `venv` file.
+Set the `GITHUB_CLIENT` and `GITHUB_SECRET` environment variables accordingly in the `venv` file.
 
-If necessary you can set the other variables too, although only the following variables are required: 
+The following environment variables are mandatory: 
 
   * `MONGODB`
   * `GITHUB_CLIENT`
