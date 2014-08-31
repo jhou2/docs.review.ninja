@@ -82,17 +82,16 @@ Set up the environment
 You need to have [Virtualbox](https://www.virtualbox.org/) and
 [Vagrant](https://www.vagrantup.com/) installed.
 
-Once you have Virtualbox and Vagrant installed you can clone this repository
+Clone this repository:
 
 	git clone https://github.com/reviewninja/vagrant.review.ninja.git
 
-and run
+Run:
 
 	vagrant up
 
-If you have not already used the ubuntu/trusty64 image with vagrant then it
-will download it for you, spin up the machine and run
-[salt](http://www.saltstack.com/) provisioning.
+This will download the puppetlabs/ubuntu-14.04-64-puppet image, if you don't have it, 
+and spin up the machine. Run [salt](http://www.saltstack.com/) provisioning.
 
 If anything fails (network failure, or any other cause), run `vagrant
 provision` to get the machine into the correct state.
