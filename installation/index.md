@@ -14,8 +14,6 @@ Prerequisites:
   * NodeJS
   * MongoDB
   * Linux or Mac OSX
-  * [Salt](http://www.saltstack.com/) 
-
 
 Basic steps:
 
@@ -28,8 +26,6 @@ Basic steps:
 Clone this repository:
 
 	git clone https://github.com/reviewninja/review.ninja.git
-
-Run [salt](http://www.saltstack.com/) provisioning.  The salt formula sets up MongoDB.
 
 The app is located in `/home/review.ninja`.  
 
