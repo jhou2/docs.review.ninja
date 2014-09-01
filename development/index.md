@@ -73,6 +73,16 @@ whenever they are changed.
 
 If you need to compile the sass files on demand, run `grunt sass`.
 
+## Pre-commit hooks (optional)
+
+We have some pre-commit hooks to aid in development.  You might need to add sudo, depending on your configuration.
+
+	pip install pre-commit  
+	pre-commit install
+
+For more information, see http://pre-commit.com/.
+
+
 Contribute to this repo
 -----------------------
 
@@ -82,89 +92,3 @@ If you like any other provisioning provider better and can contribute your
 script, feel free to open an issue and we are happy to create a repository for
 it.
 
-<h1 id="environment-variables">Environment Variables</h1>
-
-The following are the environment variables you can configure in the venv file:
-<div class="table-responsive">
-<table class="table">
-	<tr>
-	<th>Environment Variable</th>
-	<th>Description</th>
-</tr>
-<tr>
-	<td><code>GITHUB_CLIENT</code></td>
-	<td>Required</td>
-</tr>
-<tr>
-	<td><code>GITHUB_SECRET</code></td>
-	<td>Required</td>
-</tr>
-<tr>
-	<td><code>GITHUB_CALLBACK</code></td>
-	<td>Defaults to "PROTOCOL://HOST(:PORT)?/auth/github/callback"</td>
-</tr>
-<tr>
-	<td><code>GITHUB_HOST</code></td>
-	<td>Defaults to "github.com". Warning: If this variable is set, it is assumed that GitHub Enterprise is used.</td>
-</tr>
-<tr>
-	<td><code>GITHUB_API_HOST</code> </td>
-	<td>Defaults to "api.github.com"</td>
-</tr>
-<tr>
-	<td><code>GITHUB_PATH_PREFIX</code></td>
-	<td>For GitHub Enterprise, this defaults to "/api/v3". Otherwise, it defaults to empty string or "".</td>
-</tr>
-<tr>
-	<td><code>GITHUB_PROTOCOL</code></td>
-	<td>Defaults to "https".  Options: "http" or "https"</td>
-</tr>
-<tr>
-	<td><code>GITHUB_AUTHORIZATION_URL</code></td>
-	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/authorize"</td>
-</tr>
-<tr>
-	<td><code>GITHUB_TOKEN_URL</code></td>
-	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/access_token"</td>
-</tr>
-<tr>
-	<td><code>GITHUB_PROFILE_URL</code></td>
-	<td>Defaults to "GITHUB_PROTOCOL://GITHUB_API_HOST+GITHUB_PATH_PREFIX/user"</td>
-</tr>
-<tr>
-	<td><code>GACODE</code></td>
-	<td>Optional.  If this is not set, Google Analytics will not be recorded.</td>
-</tr>
-<tr>
-	<td><code>HOST</code></td>
-	<td>Defaults to "review.ninja"</td>
-</tr>
-<tr>
-	<td><code>HOST_PORT</code></td>
-	<td>This only needs to be set if it is a custom host port.  For example, http and https are used but not on port 80 and 443.</td>
-</tr>
-<tr>
-	<td><code>MONGODB</code></td>
-	<td>This must be set if it is not the same as the default: "mongodb://reviewninja:reviewninja@localhost:27017/reviewninja"  The default is only for development purposes.  It is not recommended.</td>
-</tr>
-<tr>
-	<td><code>PORT</code></td>
-	<td>The local port to bind to.  Defaults to 5000.</td>
-</tr>
-<tr>
-	<td><code>PROTOCOL</code></td>
-	<td>Defaults to "https".  "http" or "https".  </td>
-</tr>
-<tr>
-	<td><code>SMTP_HOST</code></td>
-	<td>if SMTP_HOST is set, then all SMTP_* variables must be set.  If they are not set, then the server's sendmail variables will be used.
-	<ul>
-		<li><code>SMTP_HOST</code></li>
-		<li><code>SMTP_PORT</code></li>
-		<li><code>SMTP_USER</code></li>
-		<li><code>SMTP_PASS</code></li>
-	</ul>
-	</td>
-</tr>
-</table>
-</div>
