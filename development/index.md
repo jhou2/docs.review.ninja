@@ -1,30 +1,39 @@
 ---
 layout: default
-title: ReviewNinja Installation
+title: ReviewNinja Development
 ---
-<h1 id="installation">Installation</h1>
+<h1 id="development">Development</h1>
 
-We use salt provisioning to get you installed and ready to go as hassle-free as possible.  
+To get started developing ReviewNinja, go to https://github.com/reviewninja/vagrant.review.ninja.  This is a vagrant box/salt provisioning to get you set up as quickly as possible.
 
 Set up the environment
 ----------------------
 
 Prerequisites:
 
-  * Ruby
-  * MongoDB
-  * AngularJS
-  * NodeJS
-  * Linux or Mac OSX
+  * [Virtualbox](https://www.virtualbox.org/) 
+  * [Vagrant](https://www.vagrantup.com/)
   * [Salt](http://www.saltstack.com/) 
 
 Clone this repository:
 
-	git clone https://github.com/reviewninja/review.ninja.git
+	git clone https://github.com/reviewninja/vagrant.review.ninja.git
 
-Run [salt](http://www.saltstack.com/) provisioning.
+Run:
 
-The app is located in `/home/review.ninja`.  
+	vagrant up
+
+This downloads a puppetlabs/ubuntu-14.04-64-puppet image if you don't have it 
+and starts up the virtual machine. Run [salt](http://www.saltstack.com/) provisioning.
+
+If anything fails (network failure, or any other cause), run `vagrant
+provision` to get the machine into the correct state.
+
+You can now ssh into the machine:
+
+	vagrant ssh
+
+The app is located in `/home/vagrant/review.ninja`.  
 
 	cd ~/review.ninja
 
