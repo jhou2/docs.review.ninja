@@ -24,7 +24,9 @@ Run:
 	vagrant up
 
 This downloads a puppetlabs/ubuntu-14.04-64-puppet image if you don't have it 
-and starts up the virtual machine. Run [salt](http://www.saltstack.com/) provisioning.  The salt formula also sets up MongoDB.
+and starts up the virtual machine. 
+
+Run [salt](http://www.saltstack.com/) provisioning.  The salt formula also sets up MongoDB.
 
 If anything fails (network failure, or any other cause), run `vagrant
 provision` to get the machine into the correct state.
