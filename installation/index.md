@@ -11,18 +11,25 @@ Set up the environment
 
 Prerequisites:
 
-  * Ruby
-  * MongoDB
-  * AngularJS
   * NodeJS
+  * MongoDB
   * Linux or Mac OSX
   * [Salt](http://www.saltstack.com/) 
 
+
+Basic steps:
+
+  1. Install Node
+  2. Install MongoDB
+  3. Create MongoDB user
+  4. Create MongoDB database 
+  4. Install ReviewNinja
+ 
 Clone this repository:
 
 	git clone https://github.com/reviewninja/review.ninja.git
 
-Run [salt](http://www.saltstack.com/) provisioning.
+Run [salt](http://www.saltstack.com/) provisioning.  The salt formula sets up MongoDB.
 
 The app is located in `/home/review.ninja`.  
 
