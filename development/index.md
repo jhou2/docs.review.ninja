@@ -13,7 +13,6 @@ Prerequisites:
 
   * [Virtualbox](https://www.virtualbox.org/) 
   * [Vagrant](https://www.vagrantup.com/)
-  * [Salt](http://www.saltstack.com/) 
 
 Clone this repository:
 
