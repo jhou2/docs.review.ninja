@@ -1,33 +1,40 @@
 ---
 layout: default
-title: ReviewNinja Installation
+title: ReviewNinja Development
 ---
-<h1 id="installation">Installation</h1>
+<h1 id="development">Development</h1>
 
-We use salt provisioning to get you installed and ready to go as hassle-free as possible.  
+To get started developing ReviewNinja, go to https://github.com/reviewninja/vagrant.review.ninja.  This is a vagrant box/salt provisioning to get you set up as quickly as possible.
 
 Set up the environment
 ----------------------
 
 Prerequisites:
 
-  * NodeJS
-  * MongoDB
-  * Linux or Mac OSX
+  * [Virtualbox](https://www.virtualbox.org/) 
+  * [Vagrant](https://www.vagrantup.com/)
 
-Basic steps:
-
-  1. Install Node
-  2. Install MongoDB
-  3. Create MongoDB user
-  4. Create MongoDB database 
-  4. Install ReviewNinja
- 
 Clone this repository:
 
-	git clone https://github.com/reviewninja/review.ninja.git
+	git clone https://github.com/reviewninja/vagrant.review.ninja.git
 
-The app is located in `/home/review.ninja`.  
+Run:
+
+	vagrant up
+
+This downloads a puppetlabs/ubuntu-14.04-64-puppet image if you don't have it 
+and starts up the virtual machine. 
+
+Run [salt](http://www.saltstack.com/) provisioning.  The salt formula also sets up MongoDB.
+
+If anything fails (network failure, or any other cause), run `vagrant
+provision` to get the machine into the correct state.
+
+You can now ssh into the machine:
+
+	vagrant ssh
+
+The app is located in `/home/vagrant/review.ninja`.  
 
 	cd ~/review.ninja
 
@@ -64,6 +71,16 @@ whenever they are changed.
 	grunt serve
 
 If you need to compile the sass files on demand, run `grunt sass`.
+
+## Pre-commit hooks (optional)
+
+We have some pre-commit hooks to aid in development.  You might need to add sudo, depending on your configuration.
+
+	pip install pre-commit  
+	pre-commit install
+
+For more information, see http://pre-commit.com/.
+
 
 Contribute to this repo
 -----------------------

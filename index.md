@@ -8,6 +8,8 @@ Welcome to
 
 Start reviewing code at http://review.ninja/ or [create your own private instance]({{ site.baseurl }}/installation). 
 
+Both the appication and the documentation are under active development, so changes may occur without prior notice.
+
 <h1 id="quickstart">Quickstart</h1>
 
 Go to <a href="http://review.ninja/auth/github" target="_blank">ReviewNinja</a>.
@@ -17,6 +19,8 @@ Enter your GitHub credentials.
 We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), name (GitHub handle), and email.  All other information stored is specific to ReviewNinja.
 
 ## Add your repository
+
+{% image add-repo.png width="100%" %}
 
 If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator or owner status to add the repo.
 
@@ -44,15 +48,41 @@ All pending pull requests in this repository appear in a list.
 
 Click a pull request to begin a code review.
 
+{% image pull-request.png width="100%" %}
+
 ## Issue Management
 
-Any time you discover something that needs fixing, ReviewNinja opens a GitHub issue.  
+Any time you discover something that needs fixing, ReviewNinja opens a GitHub issue. 
 
-## Starring
+To create an issue, click Issues <i class="fa fa-plus"></i>.
+
+You must enter a title for the issue.  Entering a description is optional.  To link the issue to a line number, click the line number.  An icon <span class="octicon octicon-issue-opened text-warning"></span> appears beside the line.
+
+Click on other issues to view them, add comments, or close the issues.  The corresponding GitHub issue will also be closed.  
+
+## Ninja Starring
 
 ReviewNinja understands that often in code review what matters most is *who* did the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
 
-To star a review, click <i class="fa fa-star ng-scope"></i>.
+To star a review, click the ninja <i class="fa fa-star ng-scope"></i>.
+
+## Merge with Confidence
+
+The Merge pull request button changes color to signal the level of confidence in the merge.
+
+
+{% image green-merge.PNG width="50%" %}
+
+If there is at least one star with no open issues, the Merge pull request button appears green.  
+
+{% image orange-merge.PNG width="50%" %}
+
+If there are no stars, the Merge pull request button appears orange.  
+
+{% image red-merge.PNG width="50%" %}
+
+If there are open issues, the Merge pull request button appears red.
+
 
 ## Configuration
 
@@ -68,10 +98,6 @@ You can choose to receive email notifications for the following:
 
 You can also enter specific branches that you want to "watch".  You will receive email notifications about the branch whenever there is an action related to it.
 
-
-## Developing for ReviewNinja
-
-To get started hacking ReviewNinja, go to https://github.com/reviewninja/dev.review.ninja.
 
 <h1 id="license">License
 </h1>
@@ -94,7 +120,7 @@ limitations under the License.
 </h1>
 
 <p align="center">
-![SAP](https://cdn.rawgit.com/reviewninja/review.ninja/master/sap_logo.png)
+{% image sap.png %}
 
 <p align="center">
 <i class="fa fa-heart"></i> from the github team @ sap

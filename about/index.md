@@ -7,7 +7,7 @@ title: About
 What is ReviewNinja?
 ---------------------
 
-ReviewNinja is a lightweight tool deeply integrated with GitHub that helps you perform code reviews quickly and efficiently. ReviewNinja supports hassle-free committing and merging through pull requests, with a simple voting system. Our primary focus is to make it easier to identify, review, and collaborate in code reviews.
+ReviewNinja is a lightweight tool deeply integrated with GitHub that helps you perform code reviews quickly and efficiently. ReviewNinja supports hassle-free committing and merging through pull requests, with a simple voting system. Our primary focus is to make it easier to identify, review, and collaborate in code reviews so you can merge with confidence.
 
 ReviewNinja stores the least amount of information from your GitHub account to make the app work. It ensures that the necessary data is up to date and the data is stored at GitHub only.  None of your code is stored with ReviewNinja.  
 
