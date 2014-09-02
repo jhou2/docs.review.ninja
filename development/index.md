@@ -43,9 +43,9 @@ Install npm and bower dependencies:
 	npm install
 	bower install
 
-To configure the application, copy the `.env.example` file to `venv`:
+To configure the application, copy the `.env.example` file to `.env`:
 
-	cp .env.example venv
+	cp .env.example .env
 
 You need to [register the application on
 GitHub](https://github.com/settings/applications/new). The callback is
@@ -67,7 +67,7 @@ Start the application
 
 Use nodemon to start up the app:
 
-	nodemon app.js
+	npm app.js
 
 
 
