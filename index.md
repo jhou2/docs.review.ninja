@@ -20,7 +20,7 @@ We authenticate all sessions with GitHub's provided OAuth service.  We never sto
 
 ## Add your repository
 
-{% image add-repo.png width="80%" %}
+{% image add-repo.png width="100%" %}
 
 If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator or owner status to add the repo.
 
@@ -48,7 +48,7 @@ All pending pull requests in this repository appear in a list.
 
 Click a pull request to begin a code review.
 
-{% image pull-request.png width="80%" %}
+{% image pull-request.png width="100%" %}
 
 ## Issue Management
 
@@ -71,15 +71,15 @@ To star a review, click the ninja <i class="fa fa-star ng-scope"></i>.
 The Merge pull request button changes color to signal the level of confidence in the merge.
 
 
-{% image green-merge.PNG %}
+{% image green-merge.PNG width="50%" %}
 
 If there is at least one star with no open issues, the Merge pull request button appears green.  
 
-{% image orange-merge.PNG %}
+{% image orange-merge.PNG width="50%" %}
 
 If there are no stars, the Merge pull request button appears orange.  
 
-{% image red-merge.PNG %}
+{% image red-merge.PNG width="50%" %}
 
 If there are open issues, the Merge pull request button appears red.
 
