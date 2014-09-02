@@ -60,7 +60,7 @@ You must enter a title for the issue.  Entering a description is optional.  To l
 
 Click on other issues to view them, add comments, or close the issues.  The corresponding GitHub issue will also be closed.  
 
-## Starring
+## Ninja Starring
 
 ReviewNinja understands that often in code review what matters most is *who* did the review.  By starring a pull request, it shows that the reviewer has seen the code change and has approved it.
 

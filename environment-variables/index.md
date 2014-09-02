@@ -18,6 +18,7 @@ The following are the environment variables you can configure in the venv file:
 <code>GITHUB_API_HOST</code>:  Defaults to "api.github.com"
 
 <code>GITHUB_PATH_PREFIX</code>	- For GitHub Enterprise, this defaults to "/api/v3". Otherwise, it defaults to empty string or "".
+
 <code>GITHUB_PROTOCOL</code>:  Options are "http" or "https".  Defaults to "https".  
 
 <code>GITHUB_AUTHORIZATION_URL</code>:  Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/authorize"
