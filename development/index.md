@@ -65,12 +65,11 @@ The `MONGODB` default in the `.env.example` file is correct unless you have an a
 Start the application
 ---------------------
 
-Use grunt to start up the app and compile the sass files
-whenever they are changed.
+Use nodemon to start up the app:
 
-	grunt serve
+	nodemon app.js
 
-If you need to compile the sass files on demand, run `grunt sass`.
+
 
 ## Pre-commit hooks (optional)
 
