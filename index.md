@@ -20,6 +20,8 @@ We authenticate all sessions with GitHub's provided OAuth service.  We never sto
 
 ## Add your repository
 
+{% image add-repo.png width="80%" %}
+
 If you have multiple organizations, click on the organization with the repository you want to add.  You must have collaborator or owner status to add the repo.
 
 ReviewNinja loads the repositories that you have write permissions for.  Click on the repository you want to add.
@@ -46,6 +48,8 @@ All pending pull requests in this repository appear in a list.
 
 Click a pull request to begin a code review.
 
+{% image pull-request.png width="80%" %}
+
 ## Issue Management
 
 Any time you discover something that needs fixing, ReviewNinja opens a GitHub issue. 
@@ -66,8 +70,17 @@ To star a review, click the ninja <i class="fa fa-star ng-scope"></i>.
 
 The Merge pull request button changes color to signal the level of confidence in the merge.
 
+
+{% image green-merge.PNG %}
+
 If there is at least one star with no open issues, the Merge pull request button appears green.  
+
+{% image orange-merge.PNG %}
+
 If there are no stars, the Merge pull request button appears orange.  
+
+{% image red-merge.PNG %}
+
 If there are open issues, the Merge pull request button appears red.
 
 
@@ -107,7 +120,7 @@ limitations under the License.
 </h1>
 
 <p align="center">
-![SAP](https://cdn.rawgit.com/reviewninja/review.ninja/master/sap_logo.png)
+{% image sap.png %}
 
 <p align="center">
 <i class="fa fa-heart"></i> from the github team @ sap
